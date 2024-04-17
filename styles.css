@@ -1,0 +1,642 @@
+/*opcenito*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  width: 90%; /* Adjust as needed */
+  margin: 0 auto; /* Center the content */
+}
+
+main {
+  width: 100%; /* Occupy full width of body */
+}
+
+body {
+  font-family: Roboto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.outer-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh;
+}
+
+.inner-wrapper {
+  width: 100%;
+}
+
+.highlight {
+  color: rgba(94, 59, 238, 1);
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76.8px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 32px;
+}
+p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+.titles {
+  padding: 0px 0 70px 0;
+}
+
+.left-container button:hover,
+.center-button button:hover {
+  background-color: #1c1e53;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #5e3bee;
+  cursor: pointer;
+  color: white;
+}
+
+/*navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  color: #1c1e53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Adjust padding */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar-menu li {
+  margin: 0 20px;
+}
+
+.navbar-menu a {
+  color: #1c1e53;
+  text-decoration: none;
+}
+/*home-page*/
+.contact-btn {
+  background-color: #fff;
+  color: #5e3bee;
+  border: 1px solid #5e3bee;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-container p {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+.left-container h2 {
+  font-family: Roboto;
+  font-size: 74.67px;
+  font-weight: 700;
+  line-height: 89.6px;
+  text-align: left;
+}
+.left-container button {
+  background-color: #5e3bee;
+  color: white;
+  width: 30%;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 40px;
+}
+
+.right-container {
+  flex: 1.1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.right-container img {
+  max-width: 90%;
+  max-height: 90%;
+}
+/*my skills page*/
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 22.5%;
+  background: #f5fcff;
+  background-color: #f5fcff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+}
+.card:first-child {
+  border-bottom: 4px solid #5e3bee;
+}
+
+.card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44.8px;
+  text-align: left;
+  margin: 15px 0px;
+}
+
+.card-description {
+  font-family: Roboto;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+/*About me*/
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.about-me .left-side {
+  flex: 1;
+  margin-right: 20px;
+}
+.about-me .left-side img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-me .right-side {
+  flex: 1;
+}
+
+.about-me .right-side h2 {
+  margin-bottom: 10px;
+}
+
+/*portfolio*/
+
+.portfolio {
+  padding: 20px;
+}
+
+.portfolio .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.portfolio .header-left h1 {
+  margin-bottom: 5px;
+}
+
+.portfolio button {
+  display: flex;
+  align-items: center;
+  background-color: #e62872;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portfolio button img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.cards-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-portfolio {
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.card-portfolio p {
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.card-portfolio img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.dribble-link {
+  text-decoration: none;
+  border-bottom: 1.33px solid #5e3bee;
+  font-size: 18.67px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.dribble-link img {
+  width: 20px;
+  margin-left: 5px;
+  display: inline;
+  width: auto;
+  border-radius: 0px;
+  vertical-align: middle;
+  color: #000;
+}
+/*testimonials*/
+.cards-testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-testimonials {
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1.33px solid #006b6a;
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #006b6a;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.person img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.details .name {
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+}
+.details .firm-name {
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+/*Contact*/
+
+.first-section-contact p,
+.first-section-contact h2,
+.first-section-contact h3 {
+  text-align: center;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.row-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  flex: 0 0 48%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-container select,
+.input-container textarea,
+.input-container input:not([type="checkbox"]) {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-container button {
+  text-align: center;
+}
+.center-button {
+  text-align: center;
+}
+.center-button button {
+  background-color: #5e3bee;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+input,
+select {
+  height: 40px;
+  border: #5e3bee solid 1.33px;
+}
+#message {
+  padding: 8px;
+}
+#terms-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+.input-container:not(:last-child) {
+  margin-right: 2%;
+}
+textarea {
+  border: #5e3bee solid 1.33px;
+}
+
+/*Foooter*/
+
+.navbar-footer {
+  width: 100%;
+  background-color: #fff;
+  color: #1c1e53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Adjust padding */
+  margin-bottom: 70px;
+}
+
+.navbar-socials {
+  list-style-type: none;
+}
+
+.navbar-socials li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar-socials img {
+  width: 25px;
+  height: auto;
+}
+
+.navbar-footer hr {
+  size: 3;
+  color: #282938;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.left-content p {
+  flex: 1;
+  font-size: 15.67px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.right-content {
+  display: flex;
+  gap: 15px;
+}
+
+.right-content a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18.67px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .left-container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30.6px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .left-container p {
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .left-container button {
+    padding: 4px 7px;
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .outer-wrapper {
+    height: auto;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .right-container img {
+    max-width: 50%;
+    margin-top: 150px;
+  }
+
+  .titles {
+    margin-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50.8px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  /*my skills*/
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+
+  /*about me*/
+  .about-me {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .about-me .left-side {
+    text-align: center;
+  }
+  .about-me .left-side img {
+    width: 50%;
+  }
+
+  /*my Portfolio*/
+  .cards-portfolio {
+    flex-direction: column;
+  }
+  .card-portfolio {
+    width: 100%;
+  }
+
+  /*testimonials*/
+  .cards-testimonials {
+    flex-direction: column;
+  }
+  .card-testimonials {
+    width: 100%;
+  }
+  /*contact*/
+  .contact-form {
+    width: 100%;
+  }
+
+  /*footer*/
+  .navbar-footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  footer .navbar-menu {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  body {
+    width: 90%;
+    margin: 10px;
+    overflow-x: hidden;
+  }
+  html {
+    width: 100%;
+    margin: 5px;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar-menu li {
+    padding: 6px;
+  }
+  .navbar {
+    position: static;
+  }
+  .right-container img {
+    margin-top: 10px;
+    max-width: 80%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header-right {
+    margin-top: 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .row-contact {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .card-testimonials {
+    width: 90%;
+  }
+}
